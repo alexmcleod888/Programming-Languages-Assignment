@@ -1,0 +1,21 @@
+BEGIN
+    INT n := 100;    
+   
+    # loop that goes from 0 to 100 #
+    FOR i TO n DO
+        
+        IF ((i MOD 3) = 0 AND (i MOD 5) = 0) THEN
+            print (("FizzBuzz", new line))
+        ELIF ((i MOD 3) = 0) THEN
+            printf($"Fizz"l$)   
+        ELIF ((i MOD 5) = 0) THEN
+            printf($"Buzz"l$)
+        ELSE
+            # prints out current integer #
+            # the procedure whole helps format the output. parameter 1 is the integer to #
+            # output and the second parameter is the width of the output 0 meaning it    #
+            # outputs in the first column. #
+            print((whole(i, 0), new line))
+        FI
+    OD
+END

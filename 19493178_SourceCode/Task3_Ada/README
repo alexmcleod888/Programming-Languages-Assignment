@@ -1,0 +1,10 @@
+contains:
+- sort_package.adb
+- sort_package.ads
+- usebubblesort.adb
+
+to compile:
+- gnatmake usebubblesort.adb
+
+to run:
+    ./usebubblesort
